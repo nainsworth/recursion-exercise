@@ -13,6 +13,7 @@ console.log("Iterateion Example: " + fibs(8)); //returns 0,1,1,2,3,5,8,13
 console.log("Iterateion Example: " + fibs(15)); //returns 0,1,1,2,3,5,8,13,21,34,55,89,144,233,377
 
 function fibsRec(n, fibArray = [0, 1]) {
+  console.log("This was printed recursively");
   if (n <= 1) return [0];
   if (fibArray.length >= n) return fibArray;
   return fibsRec(n, [
